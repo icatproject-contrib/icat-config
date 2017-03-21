@@ -204,8 +204,15 @@
             {
                 "url" : "/cookie-policy",
                 "stateName": "cookie-policy"
+            },
+            {
+                "url" : "/smartclient-start-server",
+                "stateName": "smartclient-start-server"
+            },
+            {
+                "url" : "/smartclient-complete",
+                "stateName": "smartclient-complete"
             }
-
         ]
     },
     "facilities": [
@@ -234,11 +241,7 @@
                     "idsUrl": "https://myids.server.ac.uk"
                 },
                 {
-                    "type" : "globus",
-                    "idsUrl": "https://myids.server.ac.uk"
-                },
-                {
-                    "type" : "scarf",
+                    "type" : "smartclient",
                     "idsUrl": "https://myids.server.ac.uk"
                 }
             ],
