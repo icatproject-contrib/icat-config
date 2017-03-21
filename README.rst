@@ -8,7 +8,7 @@ The actual content is organised in branches.  The master branch is
 reserved for example configuration files that were included in the
 distribution, having <file>.example renamed to <file>.  Site and
 installation specific configuration is in a specific branch
-respectively.  Not that these specific branches contain passwords
+respectively.  Note that these specific branches contain secrets
 and will thus not be pushed to public repositories.
 
 On the master branch, the example configuration from each new
