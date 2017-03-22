@@ -1,0 +1,16 @@
+*.jar
+*.war
+*.example
+*.pyc
+*~
+LICENSE.txt
+README.txt
+setup
+setup_utils.py
+/icat.server/fix_floats_oracle.sql
+/icat.server/icatadmin
+/icat.server/indices.sql
+/icat.server/rules.py
+/icat.server/testicat
+/icat.server/upgrade_*
+/topcat/migrations/
