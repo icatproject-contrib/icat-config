@@ -14,6 +14,7 @@ unpack:
 # distclean: remove all files from the distributions, leaving only the
 # configuration files maintained by this repository.
 distclean:
+	rm -rf topcat/content.example
 	for d in $(COMPONENTS); \
 	do \
 		rm -f $$d/*.jar $$d/*.war $$d/*.example $$d/*.pyc $$d/*~  \
