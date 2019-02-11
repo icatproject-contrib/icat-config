@@ -25,5 +25,6 @@ distclean:
 	      icat.server/indices.sql icat.server/rules.py              \
 	      icat.server/testicat icat.server/upgrade_*
 	rm -rf topcat/migrations
+	rm -rf topcat/mvn-log*.txt
 
 .PHONY: distclean unpack
