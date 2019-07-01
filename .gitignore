@@ -15,3 +15,4 @@ setup_utils.py
 /icat.server/upgrade_*
 /topcat/migrations/
 /topcat/mvn-log*.txt
+/topcat/topcat_admin

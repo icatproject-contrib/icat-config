@@ -26,5 +26,6 @@ distclean:
 	      icat.server/testicat icat.server/upgrade_*
 	rm -rf topcat/migrations
 	rm -rf topcat/mvn-log*.txt
+	rm -rf topcat/topcat_admin
 
 .PHONY: distclean unpack
