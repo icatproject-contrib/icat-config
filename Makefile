@@ -1,6 +1,7 @@
 DOWNLOADDIR = $(HOME)/Downloads
-COMPONENTS = authn.anon authn.db authn.ldap authn.simple	\
-	     icat.server icat.lucene ids.server ids.storage_file topcat
+COMPONENTS = authn.anon authn.db authn.ldap authn.simple		\
+	     icat.server icat.lucene ids.server ids.storage_file	\
+	     topcat icat.oaipmh
 
 # unpack: unzip all distributions from the DOWNLOADDIR to their
 # respective directories.
