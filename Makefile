@@ -11,6 +11,9 @@ unpack:
 		distfile=`cat $$d/VERSION | tr " " "-"`-distro.zip; \
 		unzip $(DOWNLOADDIR)/$$distfile; \
 	done
+	find $(COMPONENTS) -type f | xargs chmod go-w,a-x
+	find $(COMPONENTS) -type f -name setup | xargs chmod a+x
+	chmod a+x icat.server/icatadmin icat.server/testicat topcat/topcat_admin
 
 # distclean: remove all files from the distributions, leaving only the
 # configuration files maintained by this repository.
