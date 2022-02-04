@@ -1,4 +1,4 @@
-DOWNLOADDIR = $(HOME)/Downloads
+REPO_URL = https://repo.icatproject.org/repo/org/icatproject
 COMPONENTS = authn.anon authn.db authn.ldap authn.simple authn.oidc	\
 	     icat.server icat.lucene icat.oaipmh			\
 	     ids.server ids.storage_file topcat
@@ -6,11 +6,15 @@ COMPONENTS = authn.anon authn.db authn.ldap authn.simple authn.oidc	\
 # unpack: unzip all distributions from the DOWNLOADDIR to their
 # respective directories.
 unpack:
+	tmpfile=`mktemp`; \
 	for d in $(COMPONENTS); \
 	do \
-		distfile=`cat $$d/VERSION | tr " " "-"`-distro.zip; \
-		unzip $(DOWNLOADDIR)/$$distfile; \
-	done
+	    ver=`cat $$d/VERSION | cut --delimiter=" " --fields=2`; \
+	    url=$(REPO_URL)/$$d/$$ver/$$d-$$ver-distro.zip; \
+	    (curl --silent --show-error --location --output $$tmpfile $$url && \
+	     unzip -q $$tmpfile) || exit 1; \
+	done; \
+	rm -f $$tmpfile
 	find $(COMPONENTS) -type f | xargs chmod go-w,a-x
 	find $(COMPONENTS) -type f -name setup | xargs chmod a+x
 	chmod a+x icat.server/icatadmin icat.server/testicat topcat/topcat_admin
