@@ -29,7 +29,8 @@ distclean:
 		      $$d/setup $$d/setup_utils.py \
 		      $$d/LICENSE.txt $$d/README.txt; \
 	done
-	rm -f icat.server/fix_floats_oracle.sql icat.server/icatadmin   \
+	rm -f icat.server/create_triggers_* icat.server/drop_triggers_* \
+	      icat.server/fix_floats_oracle.sql icat.server/icatadmin   \
 	      icat.server/indices.sql icat.server/rules.py              \
 	      icat.server/testicat icat.server/upgrade_*
 	rm -rf topcat/migrations
