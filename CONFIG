@@ -1,2 +1,2 @@
-IMAGE=rkrahl/icat:4.4
+IMAGE=rkrahl/icat:4.5
 GLASSFISH_HOME=/opt/glassfish4
