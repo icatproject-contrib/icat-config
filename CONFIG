@@ -1,2 +1,2 @@
-IMAGE=rkrahl/icat:4.9
+IMAGE=rkrahl/icat:4.10
 GLASSFISH_HOME=/opt/payara41

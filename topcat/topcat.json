@@ -230,7 +230,9 @@
             "downloadTransportTypes": [
                 {
                     "type" : "http",
-                    "idsUrl": "http://localhost:8080"
+                    "idsUrl": "http://localhost:8080",
+                    "displayName": "Download to computer",
+                    "description": "Use http to download to your computer"
                 },
                 {
                     "type" : "globus",
@@ -452,7 +454,8 @@
                             "title": "METATABS.INVESTIGATION_SAMPLES.TABTITLE",
                             "items": [
                                 {
-                                    "field": "name"
+                                    "label": "METATABS.INVESTIGATION_SAMPLES.SAMPLE_NAME",
+                                    "field": "investigationSample.name"
                                 }
                             ]
                         },
