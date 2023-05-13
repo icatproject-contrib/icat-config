@@ -1,6 +1,7 @@
 authn.simple
 authn.db
 authn.anon
+icat.lucene
 icat.server
 ids.storage_file
 ids.server
