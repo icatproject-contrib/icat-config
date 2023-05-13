@@ -4,19 +4,8 @@ ICAT configuration
 This repository contains the configuration files for the various
 `ICAT`_ components.
 
-The actual content is organised in branches.  The master branch is
-reserved for example configuration files that were included in the
-distribution, having <file>.example renamed to <file>.  Site and
-installation specific configuration is in a specific branch
-respectively.  Not that these specific branches contain passwords
-and will thus not be pushed to public repositories.
-
-On the master branch, the example configuration from each new
-version of a component will overwrite the corresponding files from
-the previous version.  So you will need to take care to branch
-specific configuration off the right commit that corresponds to
-right upstream version.
-
+The present branch contains the configuration suitable to be used with
+`icat-mini-docker`_.
 
 .. _ICAT: http://www.icatproject.org/
-
+.. _icat-mini-docker: https://github.com/icatproject-contrib/icat-mini-docker
