@@ -2,9 +2,9 @@
 
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${HOME}/logs/lucene.log</file>
+		<file>/home/abuild/payara41/glassfish/domains/domain1/logs/lucene.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>${HOME}/logs/lucene.log.%d{yyyy-MM-dd}.%i.zip
+			<fileNamePattern>/home/abuild/payara41/glassfish/domains/domain1/logs/lucene.log.%d{yyyy-MM-dd}.%i.zip
 			</fileNamePattern>
 			<maxHistory>30</maxHistory>
 			<timeBasedFileNamingAndTriggeringPolicy
