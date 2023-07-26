@@ -25,6 +25,7 @@ distclean:
 	rm -rf topcat/content.example
 	for d in $(COMPONENTS); \
 	do \
+		rm -rf $$d/__pycache__; \
 		rm -f $$d/*.jar $$d/*.war $$d/*.example $$d/*.pyc $$d/*~  \
 		      $$d/setup $$d/setup_utils.py \
 		      $$d/LICENSE.txt $$d/README.txt; \
