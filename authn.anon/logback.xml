@@ -2,9 +2,9 @@
 
 	<appender name="FILE"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/home/abuild/payara41/glassfish/domains/domain1/logs/authn_anon.log</file>
+		<file>/opt/payara41/glassfish/domains/domain1/logs/authn_anon.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>/home/abuild/payara41/glassfish/domains/domain1/logs/authn_anon.log.%d{yyyy-MM-dd}.%i.zip
+			<fileNamePattern>/opt/payara41/glassfish/domains/domain1/logs/authn_anon.log.%d{yyyy-MM-dd}.%i.zip
 			</fileNamePattern>
 			<maxHistory>30</maxHistory>
 			<timeBasedFileNamingAndTriggeringPolicy
