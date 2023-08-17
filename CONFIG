@@ -1,2 +1,3 @@
 IMAGE=rkrahl/icat:4.7
 GLASSFISH_HOME=/opt/glassfish4
+GF_DOMAIN_LIBS=/usr/share/java/mysql-connector-java.jar
