@@ -15,6 +15,3 @@ setup_utils.py
 /icat.server/rules.py
 /icat.server/testicat
 /icat.server/upgrade_*
-/topcat/migrations/
-/topcat/mvn-log*.txt
-/topcat/topcat_admin
