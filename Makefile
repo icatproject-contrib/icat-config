@@ -1,7 +1,7 @@
 REPO_URL = https://repo.icatproject.org/repo/org/icatproject
 COMPONENTS = authn.anon authn.db authn.ldap authn.simple authn.oidc	\
 	     icat.server icat.lucene icat.oaipmh			\
-	     ids.server ids.storage_file
+	     ids.server ids.storage_file ids.storage_test
 
 # unpack: unzip all distributions from the DOWNLOADDIR to their
 # respective directories.
