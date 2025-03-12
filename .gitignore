@@ -7,6 +7,7 @@ LICENSE.txt
 README.txt
 setup
 setup_utils.py
+/icat.lucene/parse_synonyms.py
 /icat.server/create_triggers_*
 /icat.server/drop_triggers_*
 /icat.server/fix_floats_oracle.sql
