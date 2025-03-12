@@ -1,3 +1,3 @@
-IMAGE=rkrahl/icat:6.0
+IMAGE=rkrahl/icat:6.1
 GLASSFISH_HOME=/opt/payara6
 GF_DOMAIN_LIBS=/usr/share/java/mysql-connector-j.jar
